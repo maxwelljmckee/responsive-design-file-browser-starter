@@ -1,0 +1,39 @@
+.tree {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: auto;
+}
+
+.tree--nested {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.tree-entry {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 8fr 4fr;
+  padding: .25em 0;
+}
+
+.tree-entry__disclosure {
+  color: grey;
+  font-size: 12px;
+}
+
+.tree-entry__disclosure--closed::before {
+  content: '\25B6';
+}
+
+.tree-entry__disclosure--opened::before {
+  content: '\25BC';
+}
+
+.tree-entry__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.tree-entry__name {
+  padding-left: 10px;
+}
